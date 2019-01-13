@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>{% block title %} Blackberry-vine Shop {% endblock title %}</title>
+        {% block image_vine %}
+            <link rel="icon" type="image/png"
+                  href="{{ STATIC_URL }}images/vine.png">
+        {% endblock image_vine %}
+
+    </head>
+     <body>
+
+     <link href="{{STATIC_URL}}css/home.css"
+           rel="stylesheet" media="screen">
+
+
+        <div class="nav-bar">
+            <img class="logo" src="{{ STATIC_URL }}images/vine.png">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div>
+
+                <a href="#box" class="btn-box">
+                    <img class="box-btn" src="{{ STATIC_URL }}images/cart.png">
+                </a>
+                <a href="#login" class="btn-one">Login</a>
+                <a href="{% url 'cus-new' %}" id="register" class="btn-one" type="submit">Register</a>
+            </div>
+
+        </div>
+
+        {% block content %}
+        {% endblock content %}
+     </body>
+
+</html>

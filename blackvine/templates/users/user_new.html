@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="form">
+        <form id="User-reg-form" action="." method="post">
+            {% csrf_token %}
+            <h1>Registration</h1>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>{{ form.username.label }}</th>
+                        <th>{{ form.email.label }}</th>
+                    </tr>
+                    <tr>
+                        <td> {{ form.username }}</td>
+                        <td> {{ form.email }}</td>
+                    </tr>
+                    <tr>
+                        <td> {{ form.username.errors }}</td>
+                        <td> {{ form.email.errors }}</td>
+                    </tr>
+                    <tr>
+                        <th>Password</th>
+                        <th>Confirm Password</th>
+                    </tr>
+                    <tr>
+                        <td> {{ form.password_one }}</td>
+                        <td> {{ form.password_two }}</td>
+                    </tr>
+                    <tr>
+                        <td> {{ form.password_one.errors }}</td>
+                        <td> {{ form.password_two.errors }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>BILLING ADDRESS</h3>
+            <table class="table">
+                <tbody>
+                <tr>
+                    <th>{{ form.first_name.label }}</th>
+                    <th>{{ form.last_name.label }}</th>
+                </tr>
+                <tr>
+                    <td> {{ form.first_name }}</td>
+                    <td> {{ form.last_name }}</td>
+                </tr>
+                <tr>
+                    <td> {{ form.first_name.errors }}</td>
+                    <td> {{ form.email.last_name.errors }}</td>
+                </tr>
+                </tbody>
+            </table>
+             <input class="btn-confirm" type="submit" value="Register">
+         </form>
+    </div>
+
+
+
+{% endblock content %}

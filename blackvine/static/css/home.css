@@ -1,0 +1,110 @@
+body {
+    background: #333;
+
+}
+
+
+.nav-bar {
+        display: flow-root;
+        margin: 0 ;
+}
+
+
+.logo {
+      display: block;
+      float: left;
+      width: 60px;
+      height: 65px;
+      margin-right: 10px;
+      margin-left: 2px;
+      padding: 5px 10px;
+}
+
+nav {
+    float: left;
+    border: 3px solid #32a58f;
+    display: flex;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+
+nav ul {
+    margin: 0 px;
+    padding: auto;
+    list-style: none;
+}
+
+
+nav li {
+    display: inline-block;
+    margin: 3px;
+    margin-right: 40px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 9px 25px;
+    margin-top: 5px;
+    border-radius: 15px;
+
+}
+
+
+.btn-one {
+        display: inline-block;
+        float: right;
+        background-color: #333;
+        margin: 10px 10px;
+        border: 3px solid white;
+        text-align: center;
+        padding: 14px 15px;
+        color: white;
+        font-size: 17px;
+        text-decoration: none;
+
+}
+
+
+nav a:hover{
+    background-color: #32a58f
+}
+
+
+.btn-one:hover{
+    background-color: #32a58f
+}
+
+.btn-box {
+        display: inline-block;
+        border:none;
+        background-color:#333;
+        float: right;
+        padding: 15px 15px;
+        margin: 13px 11px;
+}
+
+.img-one img{
+            display: flex;
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+            border: 3px solid #32a58f;
+            float: left;
+            margin-right: 10px;
+}
+
+
+.img-one p{
+        color: white;
+        font-size: 20px;
+        margin-top: 30px;
+}
+
+.form h1 {
+        color: white;
+        margin-left: 100px;
+}
